@@ -36,14 +36,9 @@ module.exports = router;
 
 
 
-
-
-app.use("/auth", LoginRoute);
-app.use("/auth", RecipeRoute);
-
-
-
-
+app.get("/", (req, res) => {
+  res.redirect("/auth"); 
+});
 
 
 
